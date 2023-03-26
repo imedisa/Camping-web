@@ -10,3 +10,8 @@ body{
     font-size: 1.6rem;
     font-family: "Roboto","Roboto medium";
 }
+/* reset styles starts */
+a{
+    text-decoration: none;
+}
+/* reset styles ends */
