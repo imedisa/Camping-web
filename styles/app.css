@@ -10,3 +10,32 @@ body{
     font-size: 1.6rem;
     font-family: "Roboto","Roboto medium";
 }
+/* container starts */
+.container{
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:576px){
+    .container{
+        width: 54rem;
+    }
+}
+@media (min-width:768px){
+    .container{
+        width: 72rem;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width: 96rem;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width:114rem ;
+    }
+}
+/* container ends */
