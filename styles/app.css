@@ -1,5 +1,6 @@
 :root{
     --orange:#E76F51;
+    --white:#fff;
 }
 html{
     box-sizing: border-box;
@@ -22,7 +23,9 @@ a{
     background: linear-gradient(rgba(59,55,53,0.5),rgba(59,55,53,0.5)),url(../images/header-bg.jpg);
     background-position: center;
     background-size: cover;
-    
+    min-height: 55rem;
+    border-bottom-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
 }
 .nav{
     display: flex;
@@ -49,22 +52,37 @@ a{
 
 }
 .nav-menu{
-    display: none;
+    position: fixed;
+    top: 0;
+    left: -25rem;
+    bottom: 0;
+    width: 25rem;
+    background-color: #343434;
+    padding: 2.5rem;
+    transition: all 250ms ease-in-out;
+}
+.nav-menu--open{
+    left: 0rem;
 }
 .mobile-menu{
-
+    margin-bottom: 2rem;
 }
 .mobile-menu__item{
-
+    margin-bottom: 1rem;
 }
 .mobile-menu__link{
-
+    color: #fff;
 }
 .nav-menu__links{
+    display: flex;
 
 }
 .nav-menu__link{
-
+    color: var(--white);
+    border: 1px solid var(--white);
+    display: block;
+    padding: 1rem;
+    flex-grow: 1;
 }
 .nav-menu__link--border{
 
