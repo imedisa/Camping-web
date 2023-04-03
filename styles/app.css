@@ -1,6 +1,8 @@
 :root{
     --orange:#E76F51;
     --white:#fff;
+    --grey:#d2d2d2;
+    --dark:#343434;
 }
 html{
     box-sizing: border-box;
@@ -14,43 +16,119 @@ body{
     font-size: 1.6rem;
     font-family: "Roboto","Roboto medium";
 }
-/* reset styles starts */
+/* 
+
+============
+reset styles  
+============
+
+*/
 a{
     text-decoration: none;
 }
-/* reset styles ends */
+.btn{
+    display: block;
+    color: var(--white);
+    background-color: var(--dark);
+    width: 18rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10rem;
+    font-family:"Roboto medium" ;
+}
 .header{
     background: linear-gradient(rgba(59,55,53,0.5),rgba(59,55,53,0.5)),url(../images/header-bg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 55rem;
+    min-height: 90vh;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
+/*
+
+====
+Nav 
+====
+
+*/
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2.5rem 0;
+
 }
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+}
+/*
+
+========
+App Logo 
+========
+
+*/
 .app-logo{
     display: block;
     width: 5.5rem;
     height: 5.5rem;
+    margin-right: 4rem;
 }
 .app-logo__img{
     width: 100%;
     height: 100%;
 }
+/* 
+
+=========
+Main manu 
+=========
+
+*/
 .menu{
     display: none;
 }
 .menu__item{
-
+    margin-right: 1.5rem;
 }
 .menu__link{
-
+    color:#d2d2d2 ;
+    transition: color 150ms ease-in ;
 }
+.menu__link:hover{
+    color: var(--white);
+}
+.menu__link--active{
+    color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+.menu__link--active::before{
+    content: ' ';
+    position: absolute;
+    top: 7px;
+    width: 4rem;
+    height: .3rem;
+    background-color: var(--orange);
+    border-radius: 10rem;
+    transform: rotate(45deg);
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+/*
+
+===============
+navigation menu
+===============
+
+*/
 .nav-menu{
     position: fixed;
     top: 0;
@@ -64,6 +142,13 @@ a{
 .nav-menu--open{
     left: 0rem;
 }
+/*
+
+===========
+Mobile menu
+===========
+
+*/
 .mobile-menu{
     margin-bottom: 2rem;
 }
@@ -73,6 +158,13 @@ a{
 .mobile-menu__link{
     color: #fff;
 }
+ /*
+ 
+ =========
+ Nav links 
+ =========
+ 
+ */
 .nav-menu__links{
     display: flex;
 
@@ -87,15 +179,38 @@ a{
 .nav-menu__link--border{
 
 }
-.header__links{
+/* 
+
+============
+Nav links 
+============
+
+*/
+.nav__links{
     display: none;
 }
-.header__link{
-
+.nav__link{
+    color: var(--white);
+    font-family: "Roboto medium";
+    margin-left: 1.5rem;
 }
-.header__link--border{
-
+.nav__link--border{
+    border: 1px solid var(--white);
+    padding: 1rem 2rem;
+    border-radius: 10rem;
 }
+.nav__link--border:hover{
+    background-color: var(--white);
+    color: #343434;
+    transition: all 250ms ease-in;
+}
+/*
+
+===============
+Hamburger menu
+===============
+
+*/
 .nav__btn{
     background-color: #fff;
     width: 5.5rem;
@@ -138,4 +253,31 @@ a{
 }
 .nav__btn--open .nav__btn-line::after{
     transform:translateY(-8px) rotate(-45deg);
+}
+/* 
+
+==============
+Header content
+==============
+
+*/
+.header-content{
+    color: var(--white);
+    text-align: center;
+    margin-top: 10rem;
+}
+.header-content__title{
+    font-family: "Archivo";
+    font-size: 5rem;
+    line-height: 4.8rem;
+    margin:0 auto 3rem auto ;
+    max-width: 35rem;
+}
+.header-content__caption{
+    font-size: 1.8rem;
+    margin: 0 auto 2rem auto;    
+    max-width: 34rem;
+}
+.header-content__link{
+    background-color: var(--orange);
 }
