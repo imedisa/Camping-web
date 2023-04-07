@@ -142,6 +142,15 @@ navigation menu
 .nav-menu--open{
     left: 0rem;
 }
+.nav-menu__title{
+    color: var(--white);
+    font-size: 2rem;
+    font-family: "Archivo";
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 /*
 
 ===========
@@ -157,6 +166,28 @@ Mobile menu
 }
 .mobile-menu__link{
     color: #fff;
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+.mobile-menu__link::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: .3rem;
+    background-color: var(--orange);
+    border-radius: 5rem;
+    transition: all 250ms ease-in-out;
+
+}
+.mobile-menu__link:hover{
+    padding-left: 2.2rem;
+}
+.mobile-menu__link:hover::before{
+    width: 1.6rem;
 }
  /*
  
@@ -175,9 +206,12 @@ Mobile menu
     display: block;
     padding: 1rem;
     flex-grow: 1;
+    text-align: center;
+    transition: all 100ms ease-in;
 }
-.nav-menu__link--border{
-
+.nav-menu__link:hover{
+    background-color: var(--white);
+    color: var(--dark);
 }
 /* 
 
