@@ -3,6 +3,9 @@
     --white:#fff;
     --grey:#d2d2d2;
     --dark:#343434;
+    --primary-font:"Roboto",Arial,Helvetica,sans-serif;
+    --primary-font-md:"Roboto medium",Arial,Helvetica,sans-serif;
+    --secondary-font:"Archivo",Arial,Helvetica,sans-serif;
 }
 html{
     box-sizing: border-box;
@@ -14,7 +17,7 @@ html{
 body{
     line-height: 1.55;
     font-size: 1.6rem;
-    font-family: "Roboto","Roboto medium";
+    font-family: var(--primary-font)
 }
 /* 
 
@@ -38,7 +41,7 @@ a{
     margin-right: auto;
     margin-left: auto;
     border-radius: 10rem;
-    font-family:"Roboto medium" ;
+    font-family:var(--primary-font-md) ;
 }
 .header{
     background: linear-gradient(rgba(59,55,53,0.5),rgba(59,55,53,0.5)),url(../images/header-bg.jpg);
@@ -145,7 +148,7 @@ navigation menu
 .nav-menu__title{
     color: var(--white);
     font-size: 2rem;
-    font-family: "Archivo";
+    font-family: var(--secondary-font);
     border-bottom: 1px solid var(--white);
     padding-bottom: 1rem;
     margin-bottom: 2rem;
@@ -225,7 +228,7 @@ Nav links
 }
 .nav__link{
     color: var(--white);
-    font-family: "Roboto medium";
+    font-family: var(--primary-font-md);
     margin-left: 1.5rem;
 }
 .nav__link--border{
@@ -301,7 +304,7 @@ Header content
     margin-top: 10rem;
 }
 .header-content__title{
-    font-family: "Archivo";
+    font-family:var(--secondary-font);
     font-size: 5rem;
     line-height: 4.8rem;
     margin:0 auto 3rem auto ;
