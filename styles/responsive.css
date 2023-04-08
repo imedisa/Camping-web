@@ -1,4 +1,8 @@
 @media (max-width:576px){
+    .header{
+        min-height: 125vh;
+
+    }
     .header-content__title{
         font-size: 4rem;
     }  
@@ -31,5 +35,13 @@
 }
 
 @media (min-width:1400px){
-    
+    .header{
+        min-height: 100vh;
+
+    }
+}
+@media (min-width:2400){
+    .header{
+        min-height: 60vh;
+    }
 }
