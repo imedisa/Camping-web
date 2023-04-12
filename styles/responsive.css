@@ -1,11 +1,18 @@
+
 @media (max-width:576px){
     .header{
-        min-height: 125vh;
+        min-height: 80vh;
 
     }
     .header-content__title{
         font-size: 4rem;
     }  
+}
+@media (max-width:385px){
+
+    .destinations__title{
+        font-size: 2.4rem;
+    }
 }
 @media (min-width:576px){
     
@@ -36,7 +43,7 @@
 
 @media (min-width:1400px){
     .header{
-        min-height: 100vh;
+        min-height: 80vh;
 
     }
 }
