@@ -33,7 +33,6 @@ a{
     text-decoration: none;
 }
 .btn{
-    display: block;
     color: var(--white);
     background-color: var(--dark);
     width: 18rem;
@@ -50,7 +49,7 @@ a{
     background: linear-gradient(rgba(59,55,53,0.5),rgba(59,55,53,0.5)),url(../images/header-bg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 97vh;
     border-bottom-left-radius: 10rem;
     border-bottom-right-radius: 10rem;
 }
@@ -488,5 +487,42 @@ destinations
 .destination__btn:hover{
     color: var(--app-bg);
     background-color: var(--orange);
+
+}
+/* 
+
+============
+Newsletters
+============
+
+*/
+.newsletters{
+
+}
+.newsletters__content{
+    
+}
+.newsletters__title{
+
+}
+.newsletters__caption{
+
+}
+.newsletters__email-box{
+
+}
+.newsletters__email-icon{
+
+}
+.newsletters__input{
+
+}
+.newsletters__banner{
+
+}
+.newsletters__submit{
+
+}
+.newsletters__img{
 
 }
