@@ -1,5 +1,6 @@
 :root{
-    --orange:#E76F51;
+    --primary-color:#E76F51;
+    --secondary-color:#F8E1DB;
     --white:#fff;
     --grey:#d2d2d2;
     --light-grey:#8D8D8D;
@@ -21,6 +22,7 @@ body{
     font-size: 1.6rem;
     font-family: var(--primary-font);
     background-color: var(--app-bg);
+    /* overflow-x: hidden; */
 }
 /* 
 
@@ -119,7 +121,7 @@ Main manu
     top: 7px;
     width: 4rem;
     height: .3rem;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     border-radius: 10rem;
     transform: rotate(45deg);
     z-index: -1;
@@ -183,7 +185,7 @@ Mobile menu
     margin: auto;
     width: 0;
     height: .3rem;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     border-radius: 5rem;
     transition: all 250ms ease-in-out;
 
@@ -264,7 +266,7 @@ Hamburger menu
     display: block; /*chon span besorat defult inline ast */
     width: 2.5rem;
     height: .3rem;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     border-radius: 1rem;
     position: relative;
     transition: all 250ms ease-in-out;
@@ -274,7 +276,7 @@ Hamburger menu
     position: absolute;
     width: 2.5rem;
     height: .3rem;
-    background-color: var(--orange);
+    background-color: var(--primary-color);
     border-radius: 1rem;
     transition: all 250ms ease-in-out;
 }
@@ -319,7 +321,7 @@ Header content
     max-width: 34rem;
 }
 .header-content__link{
-    background-color: var(--orange);
+    background-color: var(--primary-color);
 }
 /* 
 
@@ -371,11 +373,7 @@ display: block;
     font-size: 1.8rem;
     margin: 1.5rem 0 .6rem 0;
 }
-.service__caption{
-
-}
-/* 
-
+/*
 =============
 destinations
 =============
@@ -439,7 +437,7 @@ destinations
     height: 4rem;
 }
 .place__like-icon--fill{
-    fill: var(--orange);
+    fill: var(--primary-color);
     stroke: var(--white);
 
 }
@@ -457,7 +455,7 @@ destinations
 }
 .place__price-text{
     font-family: var(--primary-font-md);
-    color: var(--orange);
+    color: var(--primary-color);
      
 }
 .place__title{
@@ -478,16 +476,15 @@ destinations
     background-color: rgba(141, 141, 141, 0.1);
 }
 .destination__btn{
-    color: var(--orange);
-    border: 1px solid var(--orange);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     background-color: transparent;
     transition: all 100ms ease-in;
     margin-top: 3rem;
 }
 .destination__btn:hover{
     color: var(--app-bg);
-    background-color: var(--orange);
-
+    background-color: var(--primary-color);
 }
 /* 
 
@@ -497,32 +494,69 @@ Newsletters
 
 */
 .newsletters{
-
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    color: var(--dark);
+    text-align: center;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 6rem 0;
 }
 .newsletters__content{
     
 }
 .newsletters__title{
-
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    /* max-width: 16rem; */
+    margin: 1.5rem auto;
 }
 .newsletters__caption{
-
+    font-family: var(--primary-font-md);
 }
 .newsletters__email-box{
-
+    background-color: var(--white);
+    position: relative;
+    height: 7.5rem;
+    border-radius: 2rem;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+}
+.newsletters__form{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding:  0 1rem;
 }
 .newsletters__email-icon{
-
+    flex-shrink: 0;
 }
 .newsletters__input{
-
+    border: none;
+    outline: none;
+    height: 100%;
+    color: var(--light-grey);
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+}
+.newsletters__submit{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .newsletters__banner{
 
 }
-.newsletters__submit{
-
-}
 .newsletters__img{
-
+    width: 100%;
 }

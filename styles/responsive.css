@@ -1,7 +1,6 @@
-
 @media (max-width:576px){
     .header{
-        min-height: 97vh;
+        min-height: 100vh;
 
     }
     .header-content__title{
@@ -12,6 +11,9 @@
 
     .destinations__title{
         font-size: 2.4rem;
+    }
+    .newsletters__title{
+        max-width: 16rem;
     }
 }
 @media (min-width:576px){
@@ -25,7 +27,18 @@
     .menu{
         display: flex;
     }
-    
+    .newsletters{
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+    }
+    .newsletters__content{
+        flex-basis:60% ;
+        padding-right: 2rem;
+    }
+    .newsletters__banner{
+        flex-basis:40% ;
+    }
 }
 
 @media (min-width:992px){
@@ -35,16 +48,35 @@
     .header-content__caption{   
         max-width: 50rem;
     }
+    .newsletters__content{
+        padding-right: 4rem;
+    }
+    .newsletters__title{
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width:1200px){
-    
+    .newsletters{
+        justify-content: space-between;
+    }
+    .newsletters__content{
+        flex-basis:auto ;
+        width: 60rem;
+    }
+    .newsletters__banner{
+        flex-basis:auto ;
+        width: 42rem;
+    }
 }
 
 @media (min-width:1400px){
     .header{
-        min-height: 80vh;
+        min-height: 67vh;
 
+    }
+    .newsletters{
+        padding: 3rem 6rem;
     }
 }
 @media (min-width:2400){
