@@ -1,8 +1,4 @@
 @media (max-width:576px){
-    .header{
-        min-height: 100vh;
-
-    }
     .header-content__title{
         font-size: 4rem;
     }  
@@ -39,6 +35,9 @@
     .newsletters__banner{
         flex-basis:40% ;
     }
+    .footer__scroll{
+        left: auto;
+    }
 }
 
 @media (min-width:992px){
@@ -54,9 +53,28 @@
     .newsletters__title{
         margin-bottom: 0;
     }
+    .footer-app{
+        display: block;
+    }
+    .footer-app--mobile{
+        display: none;
+    }
+    .footer__wrapper{
+        display: flex;
+    }
+    .footer__left{
+        max-width: 50rem;
+    }
+    .footer-list{
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
 }
 
 @media (min-width:1200px){
+    .header{
+        min-height: 80rem;
+    }
     .newsletters{
         justify-content: space-between;
     }
@@ -68,19 +86,17 @@
         flex-basis:auto ;
         width: 42rem;
     }
+    .footer__wrapper{
+        justify-content: space-between;
+    }
 }
 
 @media (min-width:1400px){
-    .header{
-        min-height: 67vh;
 
-    }
     .newsletters{
         padding: 3rem 6rem;
     }
 }
 @media (min-width:2400){
-    .header{
-        min-height: 60vh;
-    }
+    
 }
